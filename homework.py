@@ -154,9 +154,7 @@ WORKOUT_TYPES: dict[str, type[Training]] = {
 
 def read_package(workout_type: str, data: list[int]) -> Training:
     """Прочитать данные полученные от датчиков."""
-    if workout_type in WORKOUT_TYPES:
-        return WORKOUT_TYPES[workout_type](*data)
-    return 'Неизвестная тренировка'
+    pass
 
 
 def main(training: Training) -> None:
